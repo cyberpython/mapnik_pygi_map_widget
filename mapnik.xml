@@ -1,0 +1,18 @@
+<Map background-color="#001120" srs="+proj=mill +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +R_A +ellps=WGS84 +datum=WGS84 +units=m +no_defs ">
+
+  <Style name="world">
+    <Rule>
+      <PolygonSymbolizer fill="#001B33" />
+      <LineSymbolizer stroke="#77F1B5" stroke-width="0.5" />
+    </Rule>
+  </Style>
+  
+  <Layer name="world" srs="+proj=mill +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +R_A +ellps=WGS84 +datum=WGS84 +units=m +no_defs ">
+    <StyleName>world</StyleName>
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">ne_10m_admin_0_countries.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
